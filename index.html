@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./image/weather.ico" type="image/x-icon">
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mediaquery.css" />
+</head>
+<body>
+
+    
+
+
+    <header>
+
+      <nav class="navbar navbar-expand-lg bg-dark  navbar-dark py-3 mb-4 ">
+        <div class="container">
+          <a class="navbar-brand  d-flex justify-content-between align-items-center " href="#">
+
+            <figure> 
+              <img src="./image/logo@2x.png" alt="sky weather" class="myImage">
+             </figure>
+
+            <figcaption>
+              <h5>Weather</h5> 
+              <h6 class="logo-p">tagline goes here</h6>
+            </figcaption>
+
+       
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live cameras</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+          
+           
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+      <div class="container ">
+
+        <input  id="inputId" type="text" class="py-2 w-75 mx-auto form-control rounded-pill" placeholder="find your location...">
+
+
+        <div class="row " id="rowData" >
+
+          <div class="col-sm-12 col-md-12 col-lg-4 mt-4 mb-4">
+            <div class="myDesign text-white   ">
+                         
+            <div class="header-caption  d-flex justify-content-between align-items-center p-3 ">
+            <h6 id="dayName">   </h6>
+
+            <div class="d-flex  ">
+              <h5 id="dayNumber" class="me-2">    </h5>
+              <span id="monthName">    </span>
+            </div>
+            
+            </div>
+                        
+            <h4 id="cityName" class="city ms-3 mt-3 mb-3">   </h4>
+
+            <div class="temperature d-flex justify-content-between align-items-center">
+              <h4 id="temp" class="temp ms-3 mb-3" >  </h4>  
+              <img id="tempImg" src="" >
+            </div>
+            
+            <span id="text" class="text-span  ms-4 "> </span>
+            
+            <div class="footer-caption  mt-4 d-flex justify-content-around align-items-center ">
+
+              <div>
+                <img src="./image/icon-umberella.png"/>
+                <span id="humidity"> </span>
+              </div>
+
+              <div>
+                <img src="./image/icon-wind.png" /> 
+                <span id="wind_kph"> </span>
+              </div>
+
+              <div>
+                <img src="./image/icon-compass.png" />
+                <span id="wind_dir"> </span>
+              </div>
+
+            </div>
+            </div>
+
+
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-4 mt-4">
+              <div class="myDesign text-white  text-center  ">
+
+                <div class=" d-flex justify-content-between align-items-center header-caption ">
+                  <h6 class="day2_3  p-3">   </h6>
+
+                  <div class="d-flex">
+                    <h5 class="dayNumber2_3 me-2"></h5>
+                    <span class="dayMonth2_3"></span>  
+                  </div>
+                 
+                </div>
+                           
+
+              <img class="tempImg2_3 mb-3" src=""  >
+
+                          
+  
+                <h4  class="maxtemp2_3  ms-3 mb-3" >  </h4>  
+
+                <h6 class="mintemp2_3  ms-3 mb-3 "></h6>
+              
+              <p class="text2_3  pb-3"> </p>
+         
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-4 mt-4">
+              <div class="myDesign text-white  text-center  ">
+
+                <div class=" d-flex justify-content-between align-items-center header-caption ">
+                  <h6 class="day2_3  p-3">   </h6>
+
+                  <div class="d-flex">
+                    <h5 class="dayNumber2_3 me-2"></h5>
+                    <span class="dayMonth2_3"></span>  
+                  </div>
+                 
+                </div>
+                           
+
+              <img class="tempImg2_3 mb-3" src=""  >
+
+                          
+  
+                <h4  class="maxtemp2_3  ms-3 mb-3" >  </h4>  
+
+                <h6 class="mintemp2_3  ms-3 mb-3 "></h6>
+              
+              <p class="text2_3  pb-3"> </p>
+         
+              </div>
+            </div>
+              
+            
+
+          
+
+      </div>
+    </header>
+
+
+
+
+
+
+    <footer class="py-5 ">
+      <div class="container ">
+        <div class="row  ">
+
+          <div class="col-sm-12 col-md-12 col-lg-6  text-white mx-auto ">
+              <input type="text"  class="form-control rounded-pill mx-auto py-2 " placeholder="Enter your email to subscribe ...">
+           </div>
+
+
+                   <div class="col-sm-12 col-md-12 col-lg-4 mt-3  ">
+
+                    <div class="  d-flex justify-content-center align-items-center ">
+                      <ul class="  d-flex justify-content-center align-items-center">
+                        <li class="list-unstyled me-4"> <a target="_blank" class="ancor-style d-flex justify-content-center align-items-center" href="https://www.facebook.com/?locale=ar_AR"> <i class="fa-brands fa-facebook"></i>   </a> </li>
+                        <li class="list-unstyled me-4"> <a target="_blank" class="ancor-style d-flex justify-content-center align-items-center" href="https://twitter.com/?lang=ar"> <i class="fa-brands fa-twitter"></i>    </a></li>
+                        <li class="list-unstyled me-4"> <a target="_blank" class="ancor-style d-flex justify-content-center align-items-center" href="https://support.google.com/answer/2451065?hl=en"> <i class="fa-brands fa-google-plus"></i> </a></li>
+                        <li class="list-unstyled me-4"> <a target="_blank" class="ancor-style d-flex justify-content-center align-items-center" href="https://www.pinterest.com/"> <i class="fa-brands fa-pinterest"></i>   </a></li>
+                      </ul>
+                    </div>
+
+                   </div>
+
+                   <div class="row">
+                    <div class="col-sm-12">
+
+                      <p class="text-white mx-auto w-75  mt-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+
+                    </div>
+                   </div>
+
+
+        
+            
+    
+
+
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>

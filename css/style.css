@@ -1,0 +1,72 @@
+header {
+  background-image: url(../image/banner.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+}
+
+.myImage {
+  width: 70px;
+  margin-right: 20px;
+}
+
+.myDesign {
+  background-color: #323544;
+  border-radius: 10px;
+}
+
+.header-caption {
+  background-color: #2d303d;
+}
+
+.temp {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.temp-span {
+
+  color: white;
+
+}
+
+
+
+.text-span
+{
+color: #009AD8;
+
+}
+
+.text2_3
+{
+color: #009AD8;
+
+}
+
+
+footer {
+  background-color: #262936;
+}
+
+.ancor-style {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #1e202b;
+  text-decoration: none;
+}
+
+.ancor-style i {
+  font-size: 20px;
+  color: #009ad8;
+}
+
+.ancor-style:hover {
+  background-color: #009ad8;
+}
+
+.ancor-style:hover i {
+  color: white;
+}
